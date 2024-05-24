@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Resiliêcia</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='login.css')}}">
+</head>
+
+<body>
+    <header class="header-bg">
+        <div class="header">
+            <a href="./">
+                <img src="{{url_for('static', filename='img/logo-icon.svg')}}" alt="Logo1">
+            </a>
+            <nav aria-label="primaria">
+                <ul class="header-menu">
+                    <li>
+                        <a href="{{url_for('login')}}">Login</a></li>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="content">
+            <h1>RESILIÊNCIA</h1>
+            <p class="sub">
+                s.f. | re.si.li.ên.ci.a
+            </p>
+            <p>
+                Capacidade de quem se adapta às intempéries, às alterações ou aos infortúnios. 
+                Tendência natural para se recuperar ou superar com facilidade os problemas que aparecem.
+            </p>
+        </div>
+        <div class="form">
+            <form action="{{url_for('login')}}" method="post">
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" placeholder="email@example.com" name="email"><br>
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password"><br>
+                <input class="button" type="submit" value="Entrar">
+            </form>
+            <div class="inscricao">
+                <p>
+                    Não tem cadastro? 
+                </p>
+                <a href="{{url_for('cadastro')}}">Inscreva-se aqui.</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

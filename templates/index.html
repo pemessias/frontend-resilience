@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resiliêcia</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}"> 
+</head>
+<body>
+    <header class="header-bg">
+        <div class="header">
+            <a href="./">
+                <img src="{{url_for('static', filename='img/logo-icon.svg')}}" alt="Logo1">
+            </a>
+            <nav aria-label="primaria">
+                <ul class="header-menu">
+                    <li>
+                        <a href="{{url_for('login')}}">Login</a></li>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="introducao-bg">
+        <div class="introducao">
+            <div class="introducao-conteudo">
+                <h1 id="label-conteudo">Solidariedade em ação: Junte-se à Comunidade de apoio<span>!</span></h1>
+                <p>Deslize para baixo e descubra como você pode fazer a diferença e ajudar aqueles que mais precisam. 
+                    Cadastre-se para se conectar com pessoas dispostas a ajudar ou solicitar assistência quando necessário. 
+                    Combinando localização em tempo real, correspondências instantâneas e conversas diretas via WhatsApp. 
+                    Nossa plataforma facilita a solidariedade e o apoio mútuo. Junte-se a nós e faça parte da mudança hoje mesmo!
+                </p>
+                <a class="botao" href="{{url_for('login')}}">COMEÇAR!</a>
+            </div>
+            <img src="{{url_for('static', filename='img/img-index1.svg')}}" alt="img-principal">
+        </div>
+    </main>
+    <article class="informacao-bg">
+        <div class="informacao">
+            <img src="{{url_for('static', filename='img/img-index2.svg')}}" alt="img-informacao">
+            <div class="conteudo">
+                <div class="info-h2">
+                    <h2> Matenha-se informado, onde quer que esteja<span>.</span></h2>
+                </div>
+                <div class="info-conteudo">
+                    <p>
+                    Esteja você em casa, no trabalho, em trânsito ou até mesmo viajando pelo Brasil, 
+                    a capacidade de se manter informado nunca foi tão acessível. <br><br>Aqui, você encontrará informações 
+                    atualizadas sobre locais interditados e danificados por desastres naturais, 
+                    bem como sobre famílias que estão em situação de vulnerabilidade e necessitam de assistência.
+                    </p>
+                </div>
+            </div>
+    </article>
+    <footer class="footer-bg">
+        <div class="footer-h2">
+            <h2>
+                Em apenas um minuto, faça a diferença<span>!</span>
+            </h2>
+        </div>
+       <div class="footer-p1">
+        <p> 
+            Você pode se cadastrar facilmente e ter acesso imediato as informações sobre 
+            regiões em risco de desastre e às pessoas que precisam da sua ajuda. 
+        </p>
+       </div>
+        <div class="footer-cont">
+            <div class="footer-p2">
+                <p> 
+                    A solidariedade não é um ato de caridade, mas uma necessidade de sobrevivência do nosso próprio ser. <br>
+                   <strong>— Antônio Gramsci, Filósofo.</strong> 
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

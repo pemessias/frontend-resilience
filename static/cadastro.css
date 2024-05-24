@@ -1,0 +1,179 @@
+/* Reseta estilos padrões */ 
+
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    padding: 0px;
+    list-style: none;
+}
+
+h1, h2, ul, p {
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Estilo Cabeçario */
+
+.header-bg {
+    background-color:#F8F8F8;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header a img {
+    padding-right: 4px;
+}
+
+
+.header-menu {
+    display: flex;
+    gap: 40px; 
+}
+
+.header-menu a {
+    display: inline-block;
+    padding: 16px 0px;
+    color: #2F2E41;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/*Estilo título */
+
+.h1 {
+    margin-left: 140px;
+    padding: 70px 0px 40px 0px;
+    font-family: Raleway, Arial, sans-serif;
+    color: #2F2E41;
+}
+
+/* Formulário */ 
+
+.form {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.container {
+    display: flex;
+    margin-left: 140px;
+    margin-right: 140px;
+    justify-content: space-between;
+}
+
+
+form .container .div1 {
+    font-weight: bold;
+    color: #2F2E41;
+
+}
+
+form .container .div2 {
+    font-weight: bold;
+    color: #2F2E41;
+}
+
+form input {
+    display: inline-block;
+    outline: unset;
+    width: 405px;
+    height: 48px;
+    border-radius: 4px;
+    border: 1px solid #2F2E41;
+    margin-bottom: 40px;
+    padding-left: 20px;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 10px; 
+}
+
+::placeholder {
+    font-size: 14px;
+}
+
+.h2 {
+    margin-left: 140px;
+    padding: 70px 0px 40px 0px;
+    font-family: Raleway, Arial, sans-serif;
+    color:#2F2E41;
+    
+}
+
+/* Background */
+
+.decoration {
+    display: block; 
+    background-image: url(../static/img/img-background.svg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 100%;
+    
+}
+
+/* Continuação de Formulário */ 
+.div3 {
+    
+    margin-left: 140px;
+    font-weight: bold;
+    color: #2F2E41;
+}
+
+
+.flex {
+    display: flex; 
+    justify-content: space-between;
+    margin-right: 140px;
+}
+
+/* Botão */ 
+
+.button {
+    
+    margin-left: 140px;
+    margin-bottom: 80px;
+    width: 430px;
+    height: 62px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    background: #0D9F1B;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    color: #F2F2F2; 
+    cursor: pointer;
+    transition: background 0.3s ease, border-color 0.3s ease;
+    
+}
+
+.button:hover {
+    background: #0B8716;
+    border-color: #0D9F1B;
+}
+
+.button:active {
+    background: #096B12;
+    border-color: #0A7A14;
+}
+
