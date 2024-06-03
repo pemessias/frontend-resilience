@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alteração de dados</title>
+    <link rel="stylesheet" href="../data_change/data_change.css">
+    <link rel="icon" href="../../static/img/logo-icon.svg" type="image/svg+xml">
+</head>
+
+<body>
+    <header class="header">
+        <div class="bg-header">
+            <a href="../index/index.html">
+                <img src="../../static/img/logo-icon.svg" alt="Logo apoio desastres naturais" class="logo-icon">
+            </a>
+            <nav aria-label="primária" class="nav-menu">
+                <a href="../register/register.html" class="current-page">Cadastro</a>
+                <a href="../login/login.html">Login</a>
+            </nav>
+        </div>
+    </header>
+    <main class="content">
+        <h2 class="title">Dados pessoais</h2>
+        <div class="form-container">
+            <form class="form">
+                <label for="nome-input">Nome</label><br>
+                <input class="name-input" type="text" name="nome" placeholder="Não é possível alterar" id="nome-input"
+                    required><br><br>
+
+                <label for="contato-input">Sobrenome</label><br>
+                <input class="contato-input" type="text" name="sobrenome" placeholder="Não é possível alterar"
+                    id="contato-input" required><br><br>
+
+                <label for="tipo-auxilio-input">WhatsApp</label><br>
+                <input type="text" name="whatsapp" placeholder="Ex.: (00) 99999-9999" id="tipo-auxilio-input"
+                    required><br><br>
+
+                <button type="button" class="styled-button-duo">Atualizar WhatsApp</button><br><br>
+            </form>
+
+            <div class="form-password">
+                <label for="senha-atual-input">Senha Atual (mínimo 6 caracteres)</label><br>
+                <input type="password" name="senha-atual" placeholder="Senha Atual" id="senha-atual-input"
+                    required><br><br>
+
+                <label for="nova-senha-input">Nova Senha (mínimo 6 caracteres)</label><br>
+                <input type="password" name="nova-senha" placeholder="Nova Senha" id="nova-senha-input"
+                    required><br><br>
+
+                <button type="button" class="styled-button-one">Alterar senha</button>
+            </div>
+        </div>
+
+        <h2 class="title">Endereço</h2>
+        <form class="form">
+            <label for="cep-input">CEP</label><br>
+            <input type="text" name="cep" placeholder="Ex.: (00) 00000-000" id="cep-input" required><br><br>
+
+            <label for="logradouro-input">Logradouro</label><br>
+            <input type="text" name="logradouro" placeholder="Ex.: Rua mais um code" id="logradouro-input"
+                required><br><br>
+
+            <div class="form-group">
+                <div>
+                    <label for="numero-input">Número</label><br>
+                    <input type="text" name="numero" id="numero-input" required><br><br>
+                </div>
+                <div>
+                    <label for="bairro-input">Bairro</label><br>
+                    <input type="text" name="bairro" id="bairro-input" required><br><br>
+                </div>
+            </div>
+
+            <label for="complemento-input">Complemento</label><br>
+            <input type="text" name="complemento" placeholder="Ex.: Apartamento 00 " id="complemento-input"
+                required><br><br>
+
+            <button type="button" class="styled-button-duo">Alterar Endereço</button>
+        </form>
+    </main>
+</body>
+
+</html>
