@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Solicitações</title>
+    <link rel="stylesheet" href="../my_occurrences/my_occurrences.css">
+    <link rel="icon" href="../../static/img/logo-icon.svg" type="image/svg+xml">
+</head>
+
+<body>
+    <header class="header">
+        <div class="bg-header">
+            <a href="../index/index.html">
+                <img src="../../static/img/logo-icon.svg" alt="Logo apoio desastres naturais" class="logo-icon">
+            </a>
+            <nav aria-label="primária" class="nav-menu">
+                <a href="../index/index.html">Início</a>
+                <a href="../data_change/data_change.html">Dados</a>
+                <a href="../request_History/history.html">Histórico de Solicitações</a>
+                <a href="../my_occurrences/my_occurrences.html" class="current-page">Minhas ocorrências</a>
+                <a href="../index/index.html">Sair</a>
+            </nav>
+        </div>
+    </header>
+    <main class="content">
+        <h2 class="title">Me diz, <br> O que você está precisando? </h2>
+        <form>
+            <label for="nome-input">Nome</label><br>
+            <input type="text" name="nome" placeholder="Ex.: João" id="nome-input" required><br><br>
+
+            <label for="contato-input">Contato</label><br>
+            <input type="text" name="contato" placeholder="Ex.: (00)00000-0000" id="contato-input" required><br><br>
+
+            <label for="tipo-auxilio-input">Tipo de auxílio</label><br>
+            <input type="text" name="tipo-auxilio" placeholder="Ex.: Vestimenta, móveis, alimentação, medicamento"
+                id="tipo-auxilio-input" required><br><br>
+
+            <label for="descricao-input">Descrição</label><br>
+            <textarea name="descricao" id="descricao-input" rows="6" required></textarea><br><br>
+
+            <button type="button" class="styled-button-one">REGISTRAR</button>
+        </form>
+        <div class="help-image">
+            <img src="../../static/img/img-help.svg" alt="help">
+        </div>
+    </main>
+</body>
+
+</html>
