@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de ocorrência</title>
+    <link rel="stylesheet" href="../occurrence_record/occurence_record.css">
+    <link rel="icon" href="../../static/img/logo-icon.svg" type="image/svg+xml">
+</head>
+
+<body>
+    <header class="header">
+        <div class="bg-header">
+            <a href="../index/index.html">
+                <img src="../../static/img/logo-icon.svg" alt="Logo apoio desastres naturais" class="logo-icon">
+            </a>
+            <nav aria-label="primária" class="nav-menu">
+                <a href="../my_occurrences/my_occurrences.html">Dados</a>
+                <a href="../occurrence record/occurrence_record.html" class="current-page">Registros de ocorrências</a>
+                <a href="../request_History/history.html">Históricos</a>
+            </nav>
+        </div>
+    </header>
+    <main class="content">
+        <div class="form-container">
+            <form class="form">
+                <h2 class="title">Registros de <br>ocorrências<span style="color: #3BD94B;">:</span></h2>
+                <label for="nome-input">Título</label><br>
+                <input class="name-input" type="text" name="nome" id="nome-input" placeholder="Ex.: Alagamento"
+                    required><br><br>
+
+                <label for="descricao-input">Descrição</label><br>
+                <textarea name="descricao" id="descricao-input" rows="6" required></textarea><br><br>
+
+                <label for="tipo-auxilio-input">Gravidade</label><br>
+                <input type="text" name="whatsapp" placeholder="Descreva se é alta, média ou baixa."
+                    id="tipo-auxilio-input" required><br><br>
+
+                <label for="data">Data da ocorrência</label><br>
+                <input type="date" id="data" name="data"><br><br>
+
+            </form>
+            <div class="form-password">
+                <h2 class="title">Endereço da<br> ocorrência<span style="color: #3BD94B;">:</span></h2>
+                <form class="form">
+                    <label for="cep-input">CEP</label><br>
+                    <input type="text" name="cep" placeholder="Ex.: (00) 00000-000" id="cep-input" required><br><br>
+
+                    <label for="logradouro-input">Logradouro</label><br>
+                    <input type="text" name="logradouro" placeholder="Ex.: Rua mais um code" id="logradouro-input"
+                        required><br><br>
+
+                    <div class="form-group">
+                        <div>
+                            <label for="numero-input">Número</label><br>
+                            <input type="text" name="numero" id="numero-input" required><br><br>
+                        </div>
+                        <div>
+                            <label for="bairro-input">Bairro</label><br>
+                            <input type="text" name="bairro" id="bairro-input" required><br><br>
+                        </div>
+                    </div>
+
+                    <label for="complemento-input">Complemento</label><br>
+                    <input type="text" name="complemento" placeholder="Ex.: Apartamento 00 " id="complemento-input"
+                        required><br><br>
+
+                    <button type="button" class="styled-button-duo">Alterar Endereço</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
