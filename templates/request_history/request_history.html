@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico de Solicitações</title>
+    <link rel="stylesheet" href="../request_history/request_history.css">
+    <link rel="icon" href="../../static/img/logo-icon.svg" type="image/svg+xml">
+</head>
+
+<body>
+    <header class="header">
+        <div class="bg-header">
+            <a href="../index/index.html">
+                <img src="../../static/img/logo-icon.svg" alt="Logo apoio desastres naturais" class="logo-icon">
+            </a>
+            <nav aria-label="primária" class="nav-menu">
+                <a href="../register/register.html">Início</a>
+                <a href="../data_change/data_change.html">Dados</a>
+                <a href="../request_History/history.html" class="current-page">Histórico de Solicitações</a>
+                <a href="../my_occurrences/my_occurrences.html">Minhas ocorrências</a>
+                <a href="../index/index.html">Sair</a>
+            </nav>
+        </div>
+    </header>
+    <main class="content">
+        <h2 class="title">Já registrou a sua nova ocorrência?</h2>
+        <a href="#" class="register-link">Registe aqui.</a>
+        <h3 class="h1-ocorrencia">Lista de<br> Ocorrências<span style="color: #3BD94B;">:</span></h3>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Endereço</th>
+                        <th>Descrição</th>
+                        <th>Data</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Parcial</td>
+                        <td>Rua Qualquer, 000 - Bairro - 00000-000</td>
+                        <td>Casa alagada</td>
+                        <td>00/00/0000</td>
+                        <td class="status-pendente">Pendente</td>
+                    </tr>
+                    <tr>
+                        <td>Emergencial</td>
+                        <td>Rua Qualquer, 000 - Bairro - 00000-000</td>
+                        <td>Doença</td>
+                        <td>00/00/0000</td>
+                        <td class="status-pendente">Pendente</td>
+                    </tr>
+                    <tr>
+                        <td>Emergencial</td>
+                        <td>Rua Qualquer, 000 - Bairro - 00000-000</td>
+                        <td>Incêndio residência</td>
+                        <td>00/00/0000</td>
+                        <td class="status-concluido">Concluído</td>
+                    </tr>
+                    <tr>
+                        <td>Alagamento</td>
+                        <td>Rua Qualquer, 000 - Bairro - 00000-000</td>
+                        <td>Via alagada</td>
+                        <td>00/00/0000</td>
+                        <td class="status-concluido">Concluído</td>
+                    </tr>
+                    <tr>
+                        <td>Deslizamento</td>
+                        <td>Rua Qualquer, 000 - Bairro - 00000-000</td>
+                        <td>Bloqueio estrada</td>
+                        <td>00/00/0000</td>
+                        <td class="status-concluido">Concluído</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p class="line"></p>
+        <h3 class="h3-necessidade">Lista de<br> Necessidade<span style="color: #3BD94B;">:</span></h3>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Nome</th>
+                        <th>Contato</th>
+                        <th>Descrição</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Móveis</td>
+                        <td>Qualquer</td>
+                        <td>(00)00000-0000</td>
+                        <td>Colchão de casal</td>
+                        <td class="status-pendente">Pendente</td>
+                    </tr>
+                    <tr>
+                        <td>Vestimenta</td>
+                        <td>Qualquer</td>
+                        <td>(00)00000-0000</td>
+                        <td>Blusa de frio, Masc. M</td>
+                        <td class="status-pendente">Pendente</td>
+                    </tr>
+                    <tr>
+                        <td>Medicação</td>
+                        <td>Qualquer</td>
+                        <td>(00)00000-0000</td>
+                        <td>1 caixa de dorflex</td>
+                        <td class="status-concluido">Concluído</td>
+                    </tr>
+                    <tr>
+                        <td>Alimentação</td>
+                        <td>Qualquer</td>
+                        <td>(00)00000-0000</td>
+                        <td>1 cesta básica</td>
+                        <td class="status-concluido">Concluído</td>
+                    </tr>
+                    <tr>
+                        <td>Alimentação</td>
+                        <td>Qualquer</td>
+                        <td>(00)00000-0000</td>
+                        <td>5 kg arroz</td>
+                        <td class="status-concluido">Concluído</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3 class="precisando">Se é você quem está precisando,</h3>
+        <button href="../my_occurrences/my_occurrences.html" type="button" class="styled-button">CLIQUE AQUI</button>
+    </main>
+</body>
+
+</html>
